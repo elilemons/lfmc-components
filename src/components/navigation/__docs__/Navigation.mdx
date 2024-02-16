@@ -1,0 +1,35 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Navigation from "./Navigation.stories.tsx";
+
+<Meta of={Navigation} title="Navigation" />
+
+# Navigation
+
+Navigation component with different props.
+
+#### Example
+
+<Canvas of={Navigation.NoColors} />
+
+## Usage
+
+```ts
+import {Navigation} from "@lfmc/components";
+
+const Example = () => {
+  return (
+      <Navigation
+        logo='http://placekitten.com/200/300'
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **logo** _`() => void`_ - An svg or img tag for the logo.
+- **backgroundColor** - The background color for the nav bar.
+- **textColor** - The text color.

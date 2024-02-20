@@ -1,6 +1,6 @@
 {
   "name": "@lfmc/components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -18,16 +18,16 @@
     "test:ui": "vitest --ui",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "npm run build"
+    "prepare": "yarn build"
   },
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint",
-      "npm run test"
+      "yarn format",
+      "yarn lint",
+      "yarn test"
     ]
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 // components/button/button.tsx
+"use client";
 import React, { MouseEventHandler } from "react";
 import styled from "styled-components";
 
